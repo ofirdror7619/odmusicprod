@@ -14,7 +14,7 @@ const titleFont = UnifrakturCook({
 });
 
 export const metadata = {
-  title: "NecroTone Distortion",
+  title: "Ofir Dror Music Production",
   description: "Black metal distortion VST plugin by Ofir Dror",
 };
 
