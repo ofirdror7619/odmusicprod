@@ -1,5 +1,6 @@
 import { Cormorant_Garamond, UnifrakturCook } from "next/font/google";
 import "./globals.css";
+import CursorGlow from "./cursor-glow";
 
 const bodyFont = Cormorant_Garamond({
   variable: "--font-body",
@@ -21,7 +22,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${bodyFont.variable} ${titleFont.variable}`}>{children}</body>
+      <body className={`${bodyFont.variable} ${titleFont.variable}`}>
+        <CursorGlow />
+        {children}
+      </body>
     </html>
   );
 }
