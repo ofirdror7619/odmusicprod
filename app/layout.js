@@ -21,8 +21,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${bodyFont.variable} ${titleFont.variable}`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${bodyFont.variable} ${titleFont.variable}`} suppressHydrationWarning>
         <CursorGlow />
         {children}
       </body>
